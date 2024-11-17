@@ -33,7 +33,7 @@ const tourPackages = [
     frequency: 'TO BE DECIDED',
     time: '10:30 PM',
     description: 'Visit the historic city of Siena and explore the surrounding areas, rich in art, culture, and beautiful landscapes. Perfect for history and architecture lovers.',
-    imgSrc: 'Re8.png',
+    imgSrc: '/Re8.png',
   },
   {
     title: 'Tour of the Lucca Hills',
@@ -41,7 +41,7 @@ const tourPackages = [
     frequency: 'AT YOUR CHOICE',
     time: '10:00 AM',
     description: 'Discover the scenic beauty of the Lucca hills with a custom tour. Enjoy panoramic views, tranquil settings, and unique landscapes, ideal for nature enthusiasts.',
-    imgSrc: 'Re4.png', 
+    imgSrc: '/Re4.png', 
   },
   {
     title: 'Gardaland, Verona',
@@ -49,7 +49,7 @@ const tourPackages = [
     frequency: 'TO BE DECIDED',
     time: '10:30 PM',
     description: 'Visit Italy’s largest and most exciting amusement park, Gardaland, in Verona. Enjoy thrilling rides, shows, and attractions suitable for all ages.',
-    imgSrc: 'Re5.png',
+    imgSrc: '/Re5.png',
   },
   {
     title: 'Pisa & Lucca',
@@ -57,7 +57,7 @@ const tourPackages = [
     frequency: 'TO BE DECIDED',
     time: '10:30 PM',
     description: 'Take a day trip to Pisa and Lucca, visiting famous landmarks like the Leaning Tower of Pisa and Lucca’s beautiful historical center.',
-    imgSrc: 'Re6.png',
+    imgSrc: '/Re6.png',
   },
   {
     title: 'Florence',
@@ -65,7 +65,7 @@ const tourPackages = [
     frequency: 'TO BE DECIDED',
     time: '10:30 PM',
     description: 'Explore the art, history, and culture of Florence, one of Italy’s most iconic cities, with visits to the Uffizi Gallery, Florence Cathedral, and more.',
-    imgSrc: 'Re7.png', 
+    imgSrc: '/Re7.png', 
   },
 ];
 

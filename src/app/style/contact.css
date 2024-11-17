@@ -1,167 +1,214 @@
-/* General Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* General Styles */
+.contact-section {
+    padding: 50px 20px;
+    font-family: 'Times New Roman', serif;
+    background-color: #fcb69f8c;
   }
   
-  /* Contact Section */
-  .contact-section {
-    padding: 2rem;
-    background: #f7f7f7;
-  }
-  
-  /* Contact Container */
   .contact-container {
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+    align-items: flex-start; 
   }
   
-  /* Contact Info (Left Side) */
-  .contact-info {
-    flex: 1 1 40%; /* Adjusts to 40% of the width */
-    background: white;
-    padding: 2rem;
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background-color: #fcb69fa1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .contact-info h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 15px;
   }
   
   .contact-info p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1.5rem;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
   }
   
   .contact-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
+    padding: 10px;
   }
   
-  .contact-info ul li {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
+  .contact-info li {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    font-weight: 700;
   }
   
-  .contact-info ul li i {
+  .contact-info i {
     margin-right: 10px;
-    color: #ffa07a;
-  }
-  
-  /* Contact Form (Right Side) */
-  .contact-form {
-    flex: 1 1 55%; /* Adjusts to 55% of the width */
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #3b8e8c;
   }
   
   .contact-form form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   
   .contact-form label {
-    margin-bottom: 0.5rem;
-    color: #333;
-    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
   }
   
   .contact-form input,
   .contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
+    padding: 10px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
     width: 100%;
   }
   
   .contact-form textarea {
-    resize: none;
-    height: 100px;
+    resize: vertical;
+    min-height: 150px;
   }
   
   .contact-form .submit-btn {
-    background: #ffa07a;
+    padding: 12px 20px;
+    background-color: #3b8e8c;
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .contact-form .submit-btn:hover {
-    background: #ff7f50;
+    background-color: #2a6e6a;
   }
   
   /* Map Section */
   .map {
-    margin-top: 2rem;
-    border-radius: 10px;
-    overflow: hidden;
+    margin-top: 40px;
   }
   
-  /* Responsive Design */
+  iframe {
+    border-radius: 10px;
+    width: 100%; /* Ensure the map takes the full width */
+    height: 450px; /* Ensure proper height */
+  }
+  
+  /* Responsive Styles */
   @media (max-width: 1024px) {
     .contact-container {
-      flex-direction: column; /* Stack info and form vertically */
+      gap: 20px; /* Adjust gap for smaller devices */
     }
   
-    .contact-info,
-    .contact-form {
-      flex: 1 1 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
     .contact-info h2 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
   
-    .contact-info ul li {
-      font-size: 0.9rem;
+    .contact-info p {
+      font-size: 18px;
+    }
+  
+    .contact-info li {
+      font-size: 1.2rem;
     }
   
     .contact-form label,
     .contact-form input,
     .contact-form textarea {
-      font-size: 0.9rem;
+      font-size: 15px;
     }
   
     .contact-form .submit-btn {
-      font-size: 0.9rem;
-      padding: 0.6rem 1rem;
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Reduce gap between sections */
+    }
+  
+    .contact-info, .contact-form {
+      width: 100%; /* Ensure full width on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .contact-info h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-info p {
+      font-size: 16px;
+    }
+  
+    .contact-info li {
+      font-size: 1.1rem;
+    }
+  
+    .contact-form .submit-btn {
+      font-size: 14px;
     }
   }
   
   @media (max-width: 480px) {
     .contact-section {
-      padding: 1rem;
+      padding: 20px 10px;
+      width: 100%; /* Ensure the section doesn’t exceed screen width */
+      box-sizing: border-box; /* Prevents overflow */
+    }
+
+    .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+    .contact-container {
+      flex-direction: column; /* Stack the sections */
+      gap: 15px;
+      align-items: center; 
     }
   
     .contact-info,
     .contact-form {
-      padding: 1rem;
+      width: 80%; /* Full width for both sections */
+      min-width: 0; /* Prevents content from overflowing */
+      margin-bottom: 15px;
     }
   
-    .map iframe {
-      height: 300px; /* Reduce map height for small screens */
+    .contact-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    .contact-info li {
+      font-size: 1rem;
+    }
+  
+    .contact-form .submit-btn {
+      padding: 10px 15px;
+      font-size: 12px;
     }
   }
   

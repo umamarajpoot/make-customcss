@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo Section */}
         <div className="logo">
-          <Image width={100} height={100} src="logo.png" alt="Logo" className="logo-image" />
+          <Image width={50} height={100} src="/logo.png" alt="Logo" className="logo-image" />
           <span className="logo-text">Tours to Tuscany</span>
         </div>
 
