@@ -1,0 +1,207 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('/background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero .cta-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ffa07a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #ff7f50;
+  }
+  
+  /* Info Section */
+  .info {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+  }
+  
+  .info-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Makes it responsive */
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .info-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+  }
+  
+  .stats div {
+    background: #ffa07a;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    justify-content: center;
+  }
+  
+  .feature-card {
+    flex: 1 1 calc(25% - 2rem); /* 4 columns on larger screens */
+    max-width: 300px;
+    background: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #ffa07a;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .stats {
+      gap: 0.5rem;
+    }
+  
+    .feature-card {
+      flex: 1 1 calc(33.33% - 1rem); /* 3 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .info-content {
+      flex-direction: column; /* Stack image and text vertically */
+    }
+  
+    .features {
+      flex-direction: column; /* Stack feature cards vertically */
+      align-items: center;
+    }
+  
+    .feature-card {
+      flex: 1 1 100%; /* Full-width for mobile */
+    }
+  
+    .hero h1 {
+      font-size: 2rem; /* Smaller font size for hero section */
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .stats div {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem; /* Smaller padding for stats */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem; /* Further reduce font size */
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .info {
+      padding: 2rem 1rem;
+    }
+  
+    .features {
+      padding: 2rem 1rem;
+    }
+  
+    .feature-card {
+      padding: 1.5rem; /* Reduce padding for feature cards */
+    }
+  }
+  
